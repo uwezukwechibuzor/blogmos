@@ -2,4 +2,4 @@
 
 Welcome to CHATMOS! 
 
-The Transparent, uncensorable Social Hub for Cosmos Chains
+The Transparent, uncensorable Social Hub for Cosmos Ecosystem
