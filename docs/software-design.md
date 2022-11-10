@@ -10,6 +10,8 @@ Consider how Cosmos governance works. Cosmos requires you to vote for proposals 
 
 While some proposals are too technical or not relevant to the regular user, it quickly becomes too time-consuming to stay on top of governance voting
 
+Furthermore, many people lack in-depth technical expertise regarding blockchain technology. As a result, they rely on notable persons or node operators to translate suggestions since they feel these people are community experts. This strategy may fast become harmful since most people listen to the appeals of these popular personalities who can swiftly amass a lot of influence
+
 ### 1 Audiences
 
 There will be different types of users who may be interested in using ChatMos. Chatmos is a social Hub built for the cosmos Ecosystem
