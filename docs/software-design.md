@@ -67,11 +67,15 @@ This will be achieved with the help of a cron job so when new proposals are made
 ### 3 Why Chatmos?
 
 Risks of Governance Communication
-Let’s have a look at how Cosmos governance works, for example. Cosmos requires you to vote for proposals using your tokens. Yet, there are a few problems with this approach.
+
+Consider how Cosmos governance works. Cosmos requires you to vote for proposals with your tokens. This strategy, however, has flaws.
 
 Too many proposals.
+
 Proposals are too technical or not relevant to regular users.
+
 People vote by following prominent figures that tell them what to do.
+
 While some proposals are too technical or not relevant to the regular user, it quickly becomes too time-consuming to stay on top of governance voting.
 
 On top of that, many people don’t have in-depth technical knowledge about blockchain technology. For that reason, they rely on prominent figures or node operators to translate proposals as they believe these people are community experts. This approach can quickly become dangerous as most people listen to the calls of these prominent figures who can quickly gain a lot of power.
