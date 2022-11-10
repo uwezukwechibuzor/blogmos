@@ -23,7 +23,7 @@ There will be different types of users who may be interested in using ChatMos. C
 
 ## 2. System Overview
 
-ChatMos is a set of open source components that work together to create an uncensorable and decentralized social network for web and mobile devices. User participation and conversations focus mostly on the governance modules of Cosmos apps and, more broadly, what is going on in the Ecosystem. Proposals from all cosmos ecosystems will be retrieved, maintained in a centralized database, and shown for chatmos users in the form of postings ranging from the chain that has the newest proposal in its voting period, an uncensored comment area will be formed. This is similar to Twitter, except the postings that people remark on are the proposals, and there is a discussion-style chat to assist both technical and non-technical users.
+ChatMos is a set of open source components that work together to create an uncensorable and decentralized social network for web and mobile devices. User participation and conversations focus mostly on the governance modules of Cosmos apps and, more broadly, what is going on in the Ecosystem. Proposals from all cosmos ecosystems will be retrieved, maintained in a centralized database, and shown to chatmos users in form of tweets ranging from the chain that has the newest proposal in its voting period, an uncensored comment area will be formed. This is similar to Twitter, except the posts that people remark on are the proposals, and there is a discussion-style chat to assist both technical and non-technical users.
 
 Secondly, it would a space for cosmos Ecosystem
 
@@ -50,7 +50,7 @@ Users should be notified if someone: (1) replies to them, (2) likes their chatmo
 
 #### 2.1.5 Proposals & Comments Sections
 
-All ecosystem proposals will be fetched from all blockchains, this will serve as posts with an uncensored comment sections for discussion by the community
+All ecosystem proposals will be fetched from all blockchains, this will serve as posts with an uncensored comment sections for discussions by the community
 
 Users should be able to comment on proposals on the comment sections if they sign up with their wallet else they cannot comment
 
@@ -85,6 +85,7 @@ Cosmos, for example, allows governance token holders to delegate their vote. Mos
 As Mario Laul, a well-known figure in the space of Technology Governance, says, a decentralized network’s governance is strongly influenced by political communication, this requires professionalization. Mario Laul acknowledges that there’s a clear risk that a validator can provide false arguments to win a proposal that favors this person.
 
 Is Decentralized Governance Genuinely Decentralized?
+
 what of Delegators who donot vote and have no technical knowledge?
 Even though a project relies on decentralized governance, decentralized governance relies on centralized actions. projects should consider professionalizing the communication for proposals and provide human-understandable versions that clearly state pros and cons.
 
