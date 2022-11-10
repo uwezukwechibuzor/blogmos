@@ -50,7 +50,7 @@ Users should be notified if someone: (1) replies to them, (2) likes their chatmo
 
 #### 2.1.5 Proposals & Comments Sections
 
-All ecosystem proposals will be fetched from all blockchains, this will serve as posts with comment sections for discussion by the community
+All ecosystem proposals will be fetched from all blockchains, this will serve as posts with an uncensored comment sections for discussion by the community
 
 Users should be able to comment on proposals on the comment sections if they sign up with their wallet else they cannot comment
 
