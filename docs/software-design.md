@@ -64,5 +64,23 @@ chatmos will be made up of different components including a centralised database
 
 This will be achieved with the help of a cron job so when new proposals are made, it will be queired.
 
+### 3 Why Chatmos?
 
+Risks of Governance Communication
+Let’s have a look at how Cosmos governance works, for example. Cosmos requires you to vote for proposals using your tokens. Yet, there are a few problems with this approach.
+
+Too many proposals.
+Proposals are too technical or not relevant to regular users.
+People vote by following prominent figures that tell them what to do.
+While some proposals are too technical or not relevant to the regular user, it quickly becomes too time-consuming to stay on top of governance voting.
+
+On top of that, many people don’t have in-depth technical knowledge about blockchain technology. For that reason, they rely on prominent figures or node operators to translate proposals as they believe these people are community experts. This approach can quickly become dangerous as most people listen to the calls of these prominent figures who can quickly gain a lot of power.
+
+Cosmos, for example, allows governance token holders to delegate their vote. Most often, they choose a node operator to allow them to vote in their turn as it is much easier with minimal risks. However, you put your trust in the hands of this validator.
+
+As Mario Laul, a well-known figure in the space of Technology Governance, says, a decentralized network’s governance is strongly influenced by political communication, this requires professionalization. Mario Laul acknowledges that there’s a clear risk that a validator can provide false arguments to win a proposal that favors this person.
+
+Is Decentralized Governance Genuinely Decentralized?
+what of Delegators who donot vote and have no technical knowledge?
+Even though a project relies on decentralized governance, decentralized governance relies on centralized actions. projects should consider professionalizing the communication for proposals and provide human-understandable versions that clearly state pros and cons.
 
