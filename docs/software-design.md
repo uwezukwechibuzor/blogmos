@@ -60,46 +60,9 @@ Users should be able to chat up anyone and create discussion sections
 
 ### 2.2 System Components
 
-Dither is made up of three core components: (1) the blockchain, (2) the indexer, and (3) the client. This section will detail out these three parts.
+chatmos will be made up of different components including a centralised database and backend server that all querying of the ecosystem proposals will done. 
 
-#### 2.2.1 Dither Blockchain
-
-ChatMos is a social Hub for cosmos Ecosystem powered by the Governance Module of cosmos SDK applications. Currently, this is the Cosmos Hub blockchain. We expect that with future growth, we will strain the limits of the transaction throughput on the Cosmos Hub. Well, either that or the transactions will be too expensive to combat the greater usage. The long-term goal of Dither is to put it onto its own application-specific blockchain.
-
-##### 2.2.1.1 Dither on the Cosmos Hub
-
-For at least first year of development, we expect that we will be piggy-backing off of the Cosmos Hub blockchain.
-
-##### 2.2.1.2 Dither on an application-specific blockchain
-
-Going into the second year, we will have the resources to research, build and launch a custom blockchain for Dither.
-
-#### 2.2.2. Dither Indexer
-
-The Dither Indexer is a database that interacts with a Cosmos Hub full node to query for and store information. It is the primary data store for Dither and is queried by various front-ends to allow users to sign up, login, view, send, and query for messages.
-
-#### 2.2.3 Dither Client
-
-THe Dither client is an interchangeable component of Dither. We plan on building and maintaining three separate clients in order to be as accessible to as large of an audience as possible.
-
-##### 2.2.3.1 Dither Web
-The Dither Web Client is a graphical user interface built with modern web technologies. It is the first client that we will build for Dither, and it will serve as the reference implementation for the iOS and Android applications.
-
-##### 2.2.3.2 Dither iOS
-The iOS Client is a full-featured Dither application for recent iOS devices.
-
-##### 2.2.3.3 Dither Android
-The Android Client is a full-featured Dither application for recent Android devices.
+This will be achieved with the help of a cron job so when new proposals are made, it will be queired.
 
 
-### 3.1 App Components
 
-* cardMessage
-* cardAccount
-* pageHeaderAccount
-* appHeader
-* appMenu
-
-## 4. Roadmap
-
-See the [roadmap](./roadmap.md).
