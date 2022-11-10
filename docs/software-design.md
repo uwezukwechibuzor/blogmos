@@ -60,9 +60,9 @@ Users should be able to chat up anyone and create discussion sections
 
 ### 2.2 System Components
 
-chatmos will be made up of different components including a centralised database and backend server that all querying of the ecosystem proposals will done. 
+chatmos will be made up of different components including a centralised database and backend server where querying of the ecosystem proposals will done. 
 
-This will be achieved with the help of a cron job so when new proposals are made, it will be queired.
+This will be achieved with the help of a cron job so when new proposals are made, it will be queried.
 
 ### 3 Why Chatmos?
 
