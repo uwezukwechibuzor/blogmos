@@ -23,33 +23,40 @@ There will be different types of users who may be interested in using ChatMos. C
 
 ## 2. System Overview
 
-Dither is a collection of open source components that works together to enable an uncensorable and decentralized social network for web and mobile devices. User interaction on Dither is powered by the Cosmos Hub blockchain. User data is stored in an SQL database that is written to by a transaction indexing tool that we create.
+ChatMos is a set of open source components that work together to create an uncensorable and decentralized social network for web and mobile devices. User participation and conversations focus mostly on the governance modules of Cosmos apps and, more broadly, what is going on in the Ecosystem. Proposals from all cosmos ecosystems will be retrieved, maintained in a centralized database, and shown for chatmos users in the form of postings ranging from the chain that has the newest proposal in its voting period, an uncensored comment area will be formed. This is similar to Twitter, except the postings that people remark on are the proposals, and there is a discussion-style chat to assist both technical and non-technical users.
+
+Secondly, it would a space for cosmos Ecosystem
 
 ### 2.1 Features
 
-Dither needs to meet a set of functionaity requirements, listed below.
+Chatmos needs to meet a set of functionaity requirements, listed below.
 
 #### 2.1.1 Follow
 
-Users need to be able to follow another user's account. When they follow a user's account, that user should get a notification that they gained this new follower. The user should also be able to unfollow another user at any time. This transaction should be on-chain.
-
+Users must be able to follow the accounts of other users. When they follow a user's account, the user should be notified that they now have a new follower. At any moment, the user should be able to unfollow another user.
 A user's homepage feed consists primarily of the latest posts from the people they follow.
 
 #### 2.1.2 Post
 
-Users need to be able to post new dithers. Due to the limitations of the Cosmos Hub memo field, Dithers are chunks of content that contain at most 512 bytes of data. The data is formatted in JSON and can include just about anything. When the user hits post, the dither content is validated and then is broadcasted via a Cosmos Hub transaction. Once the transaction is validated by the Cosmos Hub, the dither content is appended to database via the Dither Index. The new dither is pushed to all of the users followers, appearing on their respective homepages.
+Users are able make a post on their timeline known as chatmos. The new chatmos is pushed to all of the users followers, appearing on their respective homepages.
 
 #### 2.1.3 Search
 
-Users need to be able to search through the dither database created by the Dither Indexer. This is an off-chain query.
+Users need to be able to search through the chatmos database.
 
 #### 2.1.4 Notify
 
-Users should be notified if someone: (1) replies to them, (2) likes their dither, (3) reposts their dither, or (4) starts following them.
+Users should be notified if someone: (1) replies to them, (2) likes their chatmos, (3) reposts their chatmos, or (4) starts following them.
 
-#### 2.1.5 Send
+#### 2.1.5 Proposals & Comments Sections
 
-Users should able to send ATOM to other users and to other cosmos1 addresses.
+All ecosystem proposals will be fetched from all blockchains, this will serve as posts with comment sections for discussion by the community
+
+Users should be able to comment on proposals on the comment sections if they sign up with their wallet else they cannot comment
+
+#### 2.1.6 chat system
+
+Users should be able to chat up anyone and create discussion sections
 
 ### 2.2 System Components
 
@@ -57,7 +64,7 @@ Dither is made up of three core components: (1) the blockchain, (2) the indexer,
 
 #### 2.2.1 Dither Blockchain
 
-Dither is a social network powered by blockchain technology. Currently, this is the Cosmos Hub blockchain. We expect that with future growth, we will strain the limits of the transaction throughput on the Cosmos Hub. Well, either that or the transactions will be too expensive to combat the greater usage. The long-term goal of Dither is to put it onto its own application-specific blockchain.
+ChatMos is a social Hub for cosmos Ecosystem powered by the Governance Module of cosmos SDK applications. Currently, this is the Cosmos Hub blockchain. We expect that with future growth, we will strain the limits of the transaction throughput on the Cosmos Hub. Well, either that or the transactions will be too expensive to combat the greater usage. The long-term goal of Dither is to put it onto its own application-specific blockchain.
 
 ##### 2.2.1.1 Dither on the Cosmos Hub
 
@@ -84,50 +91,8 @@ The iOS Client is a full-featured Dither application for recent iOS devices.
 ##### 2.2.3.3 Dither Android
 The Android Client is a full-featured Dither application for recent Android devices.
 
-## 3. Dither Client Specification
 
-### 3.1 Application Routes
-
-Note that `(auth)` means that the user needs to be logged in, and that `(no-ui)` means this route doesn't have a page associated with it, and it should redirect the user to another page.
-
-* /explore - The homepage for signed out users. Encourages users to sign up for a new account.
-* /welcome - (no-ui) This is the signup flow for new users
-  * /welcome/signup - First step of signup, accepts a username and password.
-      * Field - Username
-      * Field - Password
-      * Button - Continue
-  * /welcome/wallet - Second step signup that creates a wallet for the user
-      * Text - Explanation of what this wallet is for
-      * Text - Displays the private key for the user to backup manually
-      * Button - I've backed up my mnemonic
-  * /welcome/wallet-confirm - Second step signup that creates a wallet for the user
-      * Textarea - Requests the user to input part of their private key
-      * Text - Displays checkmark if the private key is correct
-      * Button - Start over and generate a new wallet
-      * Button - Continue
-  * /welcome/tokens - Third step signup that somehow gives tokens to the user
-      * Button - Get tokens
-      * Text - Displays the current user balance
-      * Button - I have tokens!
-  * /welcome/follow - Fourth step of signup that encourages the user to follow some accounts.
-* /login - Displays a form to allow registered users to login.
-* /index - (auth) The homepage for signed in users. Displays recent messages posted by signed-in users's following
-* /accounts - (no-ui)
-  * /accounts/:account - Displays recent messages posted by a specific account.
-  * /accounts/:account/messages/:message - Displays a specific message posted by a specific account.
-* /notifications - (auth) Displays a list of notifications for the signed-in user.
-* /search - (no-ui) supports queries for block height, transaction hash, @username, cosmos address, hashtag, or plaintext.
-  * /search/:height - Displays messages posted on a specific block height
-  * /search/:hash - Displays a specific message with this transaction hash
-  * /search/:username - Displays users that have a similar username to the query
-  * /search/:address - Displays recent messages posted by a specific address
-  * /search/:hashtag - Displays recent messages with a specific hashtag
-* /account - (no-ui) These pages apply to a specific user.
-  * /account/wallet - (auth) Displays a user's cosmos address and token balance, a form to send tokens to a username or cosmos address, and also a list of historical transactions
-  * /account/settings - (auth) Displays forms to allow users to change their username, avatar, and other application settings.
-  * /account/forgot - Displays a form to allow signed-out users to reset their password
-
-### 3.2 App Components
+### 3.1 App Components
 
 * cardMessage
 * cardAccount
