@@ -1,5 +1,5 @@
-# chatmos
+# Blogmos
 
-Welcome to CHATMOS! 
+Welcome to BLOGMOS! 
 
-The Transparent, uncensorable Social Hub for Cosmos Ecosystem
+The Transparent, uncensorable Blog Hub for Cosmos Ecosystem
