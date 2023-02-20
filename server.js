@@ -16,7 +16,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 
-//create the server
+//create the server listening on port 3000
 server.listen(port, () => {
     console.log(`Server on port ${port} is up and running...`);
 })
