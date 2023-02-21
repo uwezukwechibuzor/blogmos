@@ -5,9 +5,8 @@ const ejs = require('ejs');
 const http = require('http');
 const server = http.createServer(app);
 const io = require('socket.io')(server);
-const database = require('./database');
+const database = require('../Database/connection');
 const port = 3000;
-
 
 app.use(bodyParser.urlencoded({extended:true}));
 //render static files
