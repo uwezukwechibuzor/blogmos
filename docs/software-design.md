@@ -1,7 +1,8 @@
-# BlogMos Software Design Document
+# CHATMOS Software Design Document
 
 ## 1. Vision
-The bulk of mankind uses social networks to interact with their local and global groups. It is the mission of blogmos to solve the issue of  censorship and the risks of Governance Communication
+The bulk of mankind uses social networks to interact with their local and global grou
+ps. It is the mission of CHATMOS to solve the issue of  censorship and the risks of Governance Communication
 
 Consider how Cosmos governance works. Cosmos requires you to vote for proposals with your tokens. This strategy, however, has flaws.
 1. Too many proposals.
@@ -14,7 +15,7 @@ Furthermore, many people lack in-depth technical expertise regarding blockchain 
 
 ### 1 Audiences
 
-There will be different types of users who may be interested in using BlogMos. Blogmos is a Blog Hub built for the cosmos Ecosystem
+There will be different types of users who may be interested in using CHATMOS. CHATMOS is a chat Hub built for the cosmos Ecosystem
 
 #### a Cosmos Ecosystem Validators
 #### b Cosmos Ecosystem Delegators
@@ -23,13 +24,13 @@ There will be different types of users who may be interested in using BlogMos. B
 
 ## 2. System Overview
 
-BlogMos is a set of open source components that work together to create an uncensorable and decentralized social network for web and mobile devices. User participation and conversations focus mostly on the governance modules of Cosmos apps and, more broadly, what is going on in the Ecosystem. Proposals from all cosmos ecosystems will be retrieved, maintained in a centralized database, and shown to Blogmos users in form of tweets ranging from the chain that has the newest proposal in its voting period, an uncensored comment section will be formed. This is similar to Twitter, except the posts that people remark on are the proposals, and there is a discussion-style chat to assist both technical and non-technical users.
+CHATMOS is a set of open source components that work together to create an uncensorable and decentralized social network for web and mobile devices. User participation and conversations focus mostly on the governance modules of Cosmos apps and, more broadly, what is going on in the Ecosystem. Proposals from all cosmos ecosystems will be retrieved, maintained in a centralized database, and shown to Blogmos users in form of tweets ranging from the chain that has the newest proposal in its voting period, an uncensored comment section will be formed. This is similar to Twitter, except the posts that people remark on are the proposals, and there is a discussion-style chat to assist both technical and non-technical users.
 
 Secondly, it would a space for cosmos Ecosystem
 
 ### 2.1 Features
 
-Blogmos needs to meet a set of functionaity requirements, listed below.
+CHATMOS needs to meet a set of functionaity requirements, listed below.
 
 #### 2.1.1 Follow
 
@@ -38,15 +39,15 @@ A user's homepage feed consists primarily of the latest posts from the people th
 
 #### 2.1.2 Post
 
-Users are able make a post on their timeline known as blogmos. The new blogmos is pushed to all of the users followers, appearing on their respective homepages.
+Users are able make a post on their timeline known as CHATMOS. The new chatmos is pushed to all of the users followers, appearing on their respective homepages.
 
 #### 2.1.3 Search
 
-Users need to be able to search through the blogmos database.
+Users need to be able to search through the CHATMOS database.
 
 #### 2.1.4 Notify
 
-Users should be notified if someone: (1) replies to them, (2) likes their blogmos, (3) reposts their blogmos, or (4) starts following them.
+Users should be notified if someone: (1) replies to them, (2) likes their CHATMOS, (3) reposts their chatmos, or (4) starts following them.
 
 #### 2.1.5 Proposals & Comments Sections
 
@@ -60,11 +61,11 @@ Users should be able to chat up anyone and create discussion sections
 
 ### 2.2 System Components
 
-blogmos will be made up of different components including a centralised database and backend server where querying of the ecosystem proposals will done. 
+CHATMOS will be made up of different components including a centralised database and backend server where querying of the ecosystem proposals will done. 
 
 This will be achieved with the help of a cron job so when new proposals are made, it will be queried.
 
-### 3 Why Blogmos?
+### 3 Why CHATMOS?
 
 Risks of Governance Communication
 
