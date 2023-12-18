@@ -2,4 +2,4 @@
 
 Welcome to CHATMOS! 
 
-The Transparent, uncensorable Blog Hub for Cosmos Ecosystem
+The Transparent, uncensorable CHAT Hub for Cosmos Ecosystem
